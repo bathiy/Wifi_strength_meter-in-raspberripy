@@ -62,3 +62,11 @@ Install the following packages on your Raspberry Pi:
 sudo apt update
 sudo apt install python3-pip python3-dev i2c-tools -y
 pip3 install RPi.GPIO luma.oled pillow
+
+## 🔧 Enable I2C on Raspberry Pi
+
+To use the OLED display, make sure I2C is enabled on your Raspberry Pi:
+
+```bash
+sudo raspi-config
+# Navigate to: Interfacing Options -> I2C -> Enable
