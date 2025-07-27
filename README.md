@@ -81,3 +81,31 @@ sudo raspi-config
 ```bash
 sudo python3 wifi_signal_meter.py
 ```
+## 📋 Menu Flow
+
+- `Scan Wi-Fi`: Lists all available networks, scrollable using the Up/Down buttons.
+- `Select Network`: Monitors the selected Wi-Fi network.
+- `RSSI Display`: Shows real-time RSSI in dBm and a visual `*` bar.
+- `--Back--`: Returns to the main menu.
+- `Turn Off`: Exits the program safely.
+
+## 🔚 Clean Exit
+
+The program ensures a proper GPIO cleanup (`GPIO.cleanup()`), preventing issues on shutdown or re-run.
+
+---
+
+## 📘 Project Goals & Learnings
+
+- Interface buttons and an OLED screen with a Raspberry Pi using Python
+- Monitor and visualize real-time Wi-Fi signal strength
+- Build a simple embedded user interface using minimal components
+- Practice button input handling with debounce logic
+
+---
+
+## 👨‍💻 Author
+
+**Bathiya Dissanayake**  
+Undergraduate – Electronics and Telecommunication Engineering  
+University of Moratuwa
